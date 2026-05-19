@@ -1,7 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body{
     font-family: 'Your Font Name',sans-serif;
@@ -15,6 +19,10 @@ header{
     display:flex;
     justify-content: space-between;
     text-align: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 nav a{
     color: white;
@@ -42,6 +50,75 @@ h2 {
     font-size: 30px;
     color: #404063;
     margin-bottom: 18px;
+}
+.skills-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #08080c;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e94560, #1a1a2e);
+  border-radius: 10px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-top: 4px solid #e94560;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-tag {
+  background: #f0f2f5;
+  color: #1a1a2e;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: #1a1a2e;
+  border: none;
+  padding: 0;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  flex-grow: 1;
 }
 footer{
     background-color: #1a1a2e;
@@ -72,4 +149,59 @@ footer{
 
 .btn:hover {
   background-color: #c73652;
+}
+  
+ .edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.edu-item {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-top: 4px solid #e94560;
+}
+
+.edu-item h3 {
+  font-size: 16px;
+  color: #e94560;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.edu-item p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
 }
