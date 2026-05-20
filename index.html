@@ -3,123 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ahmed Farhan - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
     <header>
-    <nav>
-    <h1> Hello!  I'm Ahmed Farhan</h1>
-    <a href="#about">About Me</a>
-    <a href="#Project">Projects</a>
-    <a href="#contact">Contact</a>
-    </nav>
-</header>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="hero"></div>
-            <h1>Ahmed Farhan</h1>
-            <p class="job-title">Web Developer</p>
-            <br>
-            <div class="about-content">
-            <div class="about-text"></div>
-            <p>I'm learning HTML, CSS, JavaScript and Python to build real products and freelance internationally.</p>
-            <br>
-            <a href="#contact" class="btn">Get in Touch</a>
+        <nav class="navbar">
+            <div class="logo">Ahmed Farhan</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeBtn" class="dark-btn">Dark Mode</button>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-        </section>
-        <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
+        </nav>
+    </header>
 
-    <div class="skill-item">
-      <div class="skill-header">
-        <span>HTML</span>
-        <span>75%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 75%"></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <div class="skill-header">
-        <span>CSS</span>
-        <span>50%</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 50%"></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <div class="skill-header">
-        <span>JavaScript</span>
-        <span>Learning</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 10%"></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-        <section>
-            <h2 id="hed2">Education</h2>
-            <div class="edu-grid">
-                <div class="edu-item">
-                    <h3>University</h3>
-                    <p>Ilma University</p>
-                    <p>2025 - ongoing</p>
-                </div>
-                <div class="edu-item">
-                    <h3>College</h3>
-                    <p>Gulshan-e-Iqbal College</p>
-                    <p>2022 - 2024</p>
-                </div>
-                <div class="edu-item">
-                    <h3>School</h3>
-                    <p>Inspiration Model School</p>
-                    <p>2020 - 2022</p>
-                </div>
-            </div>
-        <section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
-    
-    <div class="project-card">
-      <div class="project-tag">HTML + CSS</div>
-      <h3>Personal Portfolio</h3>
-      <p>My first project. A responsive portfolio site built from scratch using HTML and CSS.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <div class="project-tag">Coming Soon</div>
-      <h3>Project Two</h3>
-      <p>Currently learning JavaScript. This spot will be filled by end of Month 2.</p>
-      <a href="#" class="btn">Coming Soon</a>
-    </div>
-
-    <div class="project-card">
-      <div class="project-tag">Coming Soon</div>
-      <h3>Project Three</h3>
-      <p>More projects loading as skills grow.</p>
-      <a href="#" class="btn">Coming Soon</a>
-    </div>
-
-  </div>
-</section>
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <div class="contact-box">
-            <p><a href="mailto:ahmed.farhanstu@gmail.com">ahmed.farhanstu@gmail.com</a></p>
-            <p>LinkedIn:Coming Soon</p>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Hi, I'm Ahmed Farhan</h1>
+                <h2>Web Developer</h2>
+                <p id="typing-text"></p>
+                <p>Building responsive, user-friendly websites with HTML, CSS, and JavaScript</p>
+                <a href="#projects" class="btn-primary">View My Work</a>
             </div>
         </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate web developer currently honing my skills in HTML, CSS, JavaScript, and Python. My goal is to build real-world products and eventually freelance internationally.</p>
+                        <p>I believe in continuous learning and turning ideas into clean, functional code.</p>
+                        <a href="#contact" class="btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>Learning</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="edu-grid">
+                    <div class="edu-item">
+                        <h3>University</h3>
+                        <p>Ilma University</p>
+                        <p>2025 - Present</p>
+                    </div>
+                    <div class="edu-item">
+                        <h3>College</h3>
+                        <p>Gulshan-e-Iqbal College</p>
+                        <p>2022 - 2024</p>
+                    </div>
+                    <div class="edu-item">
+                        <h3>School</h3>
+                        <p>Inspiration Model School</p>
+                        <p>2020 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-tag">HTML + CSS</div>
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio site built from scratch using HTML and CSS. Features a clean design with smooth scrolling navigation.</p>
+                        <a href="#" class="btn-secondary">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-tag">Coming Soon</div>
+                        <h3>JavaScript Project</h3>
+                        <p>Currently learning JavaScript. This spot will be filled by end of Month 2.</p>
+                        <a href="#" class="btn-secondary">Coming Soon</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-tag">Coming Soon</div>
+                        <h3>Python Project</h3>
+                        <p>More projects loading as skills grow and new technologies are mastered.</p>
+                        <a href="#" class="btn-secondary">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:ahmed.farhanstu@gmail.com">ahmed.farhanstu@gmail.com</a></p>
+                        <p><strong>Location:</strong> Karachi, Pakistan</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p> Built by Ahmed Farhan</p>
+        <div class="container">
+            <p>&copy; 2025 Ahmed Farhan. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
